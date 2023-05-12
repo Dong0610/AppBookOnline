@@ -1,0 +1,2 @@
+rootProject.name = "AppBookOnline"
+include ':app'

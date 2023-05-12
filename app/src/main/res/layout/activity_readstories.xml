@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White"
+    tools:context=".activity.ReadStories">
+
+
+    <RelativeLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:background="@drawable/background_top"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ImageView
+            android:id="@+id/icbackpress"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginStart="9dp"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:layout_marginRight="350dp"
+            android:padding="@dimen/_8sdp"
+            android:src="@drawable/icarrow_back" />
+
+        <TextView
+            android:id="@+id/txtchapname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="@dimen/_15sdp"
+
+            android:layout_toStartOf="@+id/icsetting"
+            android:layout_toEndOf="@+id/icbackpress"
+            android:text="nikjgnofnnksfksmfksmkfk"
+            android:textColor="@color/AliceBlue"
+            android:textSize="@dimen/_14sdp" />
+
+        <ImageView
+            android:id="@+id/icsetting"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:layout_marginEnd="7dp"
+            android:layout_marginRight="12dp"
+            android:padding="@dimen/_8sdp"
+            android:src="@drawable/ic_home_white" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:padding="@dimen/_6sdp"
+        android:scrollbars="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
+      <LinearLayout
+          android:orientation="vertical"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+          <TextView
+              android:id="@+id/txtstrcontent"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="@dimen/_10sdp"
+              android:text="nikjgnofnnksfksmfksmkfk"
+              android:textColor="@color/Black"
+              android:textSize="@dimen/_13sdp" />
+
+          <LinearLayout
+              android:layout_weight="2"
+              android:layout_width="match_parent"
+              android:layout_height="@dimen/_30sdp">
+              <TextView
+                  android:layout_weight="1"
+                  android:id="@+id/prechap"
+                  android:text="Chương trước"
+                  android:textSize="@dimen/_15sdp"
+                  android:textColor="@color/Gray"
+                  android:gravity="center"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"/>
+              <TextView
+                  android:id="@+id/nextchap"
+                  android:textSize="@dimen/_15sdp"
+                  android:layout_weight="1"
+                  android:text="Chương sau"
+                  android:textColor="@color/Gray"
+                  android:gravity="center"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"/>
+          </LinearLayout>
+      </LinearLayout>
+
+    </ScrollView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:orientation="vertical"
+
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:id="@+id/layoutitem"
+        android:background="#6A000000"
+        android:paddingLeft="@dimen/_30sdp"
+        android:paddingRight="@dimen/_30sdp"
+        android:paddingTop="@dimen/_30sdp"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/idval"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:gravity="right"
+            android:text="Thoát"
+            android:textColor="@color/White"
+            android:textSize="@dimen/_18sdp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </TextView>
+
+        <SeekBar
+
+            android:id="@+id/seektextside"
+            style="@android:style/Widget.DeviceDefault.Light.SeekBar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_20sdp"
+            android:max="7"
+            android:min="1"
+            android:progress="4"
+            android:progressTint="@color/Aqua"
+            android:scaleX="2"
+            android:scaleY="2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

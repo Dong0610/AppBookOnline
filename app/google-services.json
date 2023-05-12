@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "585729269306",
+    "project_id": "docsachonline-dongdong",
+    "storage_bucket": "docsachonline-dongdong.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:585729269306:android:a4ca00569553db6ef21f03",
+        "android_client_info": {
+          "package_name": "com.dongdong.appbookonline"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "585729269306-3pesersnu10qpr74n0fmho7aieestejp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBGZvGpkDxcnGO-1vruyLP0Gf1hgJ_3iL8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "585729269306-3pesersnu10qpr74n0fmho7aieestejp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:585729269306:android:6b2f1ea64ffaa6f7f21f03",
+        "android_client_info": {
+          "package_name": "com.dongdong.sachonlineapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "585729269306-3pesersnu10qpr74n0fmho7aieestejp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBGZvGpkDxcnGO-1vruyLP0Gf1hgJ_3iL8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "585729269306-3pesersnu10qpr74n0fmho7aieestejp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

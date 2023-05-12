@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cus_bachground"
+    tools:context=".activity.SignUpActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_40sdp"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_150sdp"/>
+
+        <TextView
+            android:textColor="@color/Black"
+            android:id="@+id/txtview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/myfont"
+            android:gravity="center"
+            android:text="Sign In"
+            android:textSize="@dimen/_24sdp"
+            android:textStyle="bold" />
+        <TextView
+            android:textColorHint="@color/Gray"
+            android:textColor="@color/LightSlateGray"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/myfont"
+            android:gravity="center"
+            android:text="Wellcome back"
+            android:textSize="@dimen/_16sdp"
+            android:textStyle="normal" />
+
+        <EditText
+            android:textColor="@color/Black"
+            android:layout_marginTop="@dimen/_50sdp"
+            android:id="@+id/email"
+            android:hint="Email"
+            android:textColorHint="@color/Gray"
+            android:fontFamily="@font/myfont"
+            android:paddingStart="@dimen/_20sdp"
+            android:inputType="textEmailAddress"
+            android:background="@drawable/customtextbox"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_34sdp"
+            android:paddingLeft="@dimen/_20sdp" />'
+        <EditText
+            android:textColorHint="@color/Gray"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:id="@+id/passw"
+            android:hint="Password"
+            android:textColor="@color/Black"
+            android:fontFamily="@font/myfont"
+            android:inputType="textPassword"
+            android:paddingStart="@dimen/_20sdp"
+            android:background="@drawable/customtextbox"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_34sdp"
+            android:paddingLeft="@dimen/_20sdp" />
+
+
+        <Button
+            android:id="@+id/btnsignin"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_34sdp"
+            android:layout_marginLeft="@dimen/_60sdp"
+            android:layout_marginTop="@dimen/_40sdp"
+            android:layout_marginRight="@dimen/_60sdp"
+            android:background="@drawable/customtextbox"
+            android:fontFamily="@font/myfont"
+            android:text="Sign in"
+            android:textColor="@color/DodgerBlue"
+            android:textSize="@dimen/_16sdp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_width="match_parent"
+            android:text="Sign Up"
+            android:id="@+id/signup"
+            android:textSize="@dimen/_14sdp"
+            android:textColor="@color/LightSlateGray"
+            android:fontFamily="@font/myfont"
+            android:gravity="center"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+
+</ScrollView>

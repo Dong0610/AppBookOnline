@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+
+    android:layout_height="wrap_content">
+    <TextView
+        android:text="Chuong 1."
+        android:textStyle="normal"
+        android:paddingTop="@dimen/_6sdp"
+        android:paddingStart="@dimen/_18sdp"
+        android:textColor="@color/White"
+        android:textSize="@dimen/_14sdp"
+        android:paddingLeft="@dimen/_8sdp"
+        android:paddingRight="@dimen/_8sdp"
+        android:background="@drawable/cuschapbg"
+        android:id="@+id/chapter"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_32sdp"/>
+
+</RelativeLayout>

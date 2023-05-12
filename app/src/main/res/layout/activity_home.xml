@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/White"
+    android:layout_height="match_parent"
+    tools:context=".activity.HomeActivity">
+
+    <RelativeLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:background="@drawable/background_top"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:layout_width="@dimen/_38sdp"
+        app:riv_corner_radius="@dimen/_19sdp"
+        android:id="@+id/imguser"
+       android:layout_marginTop="@dimen/_6sdp"
+        android:layout_marginLeft="@dimen/_12sdp"
+        android:background="@drawable/cus_bg_image"
+        android:layout_height="@dimen/_38sdp"/>
+
+        <ImageView
+            android:id="@+id/icsetting"
+            android:src="@drawable/ic_settings"
+            android:padding="@dimen/_8sdp"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="12dp"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:layout_marginRight="12dp" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:padding="@dimen/_6sdp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:scrollbars="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout2"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+        tools:layout_editor_absoluteX="0dp">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:background="@drawable/bg_shadows"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_marginTop="@dimen/_6sdp"
+                    android:textColor="@color/Blue"
+                    android:text="Mới nhất"
+                    android:fontFamily="@font/myfont"
+                    android:textSize="@dimen/_14sdp"
+                    android:paddingStart="@dimen/_6sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/newstories"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_120sdp"
+                    android:layout_marginTop="@dimen/_6sdp"
+                    android:background="@drawable/cus_bg_image"
+                    android:orientation="horizontal"
+                    android:overScrollMode="never"
+                    android:padding="@dimen/_10sdp"
+                    android:paddingBottom="@dimen/_20sdp"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:background="@drawable/bg_shadows"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_marginTop="@dimen/_6sdp"
+                    android:textColor="@color/Blue"
+                    android:text="Đọc nhiều"
+                    android:fontFamily="@font/myfont"
+                    android:textSize="@dimen/_14sdp"
+                    android:paddingStart="@dimen/_6sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/sortview"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_120sdp"
+                    android:layout_marginTop="@dimen/_6sdp"
+                    android:background="@drawable/cus_bg_image"
+                    android:orientation="horizontal"
+                    android:overScrollMode="never"
+                    android:padding="@dimen/_10sdp"
+                    android:paddingBottom="@dimen/_20sdp"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:background="@drawable/bg_shadows"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_marginTop="@dimen/_6sdp"
+                    android:textColor="@color/Blue"
+                    android:text="Đọc nhiều"
+                    android:fontFamily="@font/myfont"
+                    android:textSize="@dimen/_14sdp"
+                    android:paddingStart="@dimen/_6sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/stralllist"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_6sdp"
+                    android:background="@drawable/cus_bg_image"
+                    android:orientation="horizontal"
+                    android:overScrollMode="never"
+                    android:padding="@dimen/_2sdp"
+                    android:paddingBottom="@dimen/_20sdp"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+    <LinearLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:layout_height="@dimen/_45sdp"
+        android:background="@drawable/background_bottom"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" >
+        <LinearLayout
+            android:layout_weight="1"
+            android:background="@color/Black"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1"
+            android:background="@color/Gray"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1"
+            android:background="@color/Aqua"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
